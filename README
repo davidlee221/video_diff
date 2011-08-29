@@ -1,0 +1,22 @@
+video_diff
+==============
+
+Videodiff is a python script that lets you calculate the difference between frames of a video and output the results as a csv file.
+
+The csv file is arranged as 
+timestamp of the frame, percentage difference 
+(timestamp in seconds), (decimal 2.16 is 2.16% difference in raw pixels)
+
+Not all frames can be processed so in a 30 fps movie, only 5 frames may be whole frames and can therefore be compared.
+
+Installation
+============
+
+You will need the Python OpenCV Bindings installed. Please see the OpenCV wiki for details.
+
+Example
+=======
+
+python example.py videofile.mov videofile.csv -w -v -d -c
+
+Copyright (c) 2011 Timothy Marks, released under the MIT license
